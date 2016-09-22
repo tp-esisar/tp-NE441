@@ -1,0 +1,17 @@
+package exo4;
+
+
+import java.net.DatagramSocket;
+import java.net.InetSocketAddress;
+import java.net.SocketException;
+
+
+public class UdpHello {
+
+	public static void main(String[] args) throws SocketException {
+		DatagramSocket socket = new DatagramSocket();
+		InetSocketAddress dest = new InetSocketAddress("192.168.130.171", 20000);
+		
+	}
+
+}

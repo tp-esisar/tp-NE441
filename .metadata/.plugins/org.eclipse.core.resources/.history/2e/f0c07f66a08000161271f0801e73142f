@@ -1,0 +1,12 @@
+package exo4;
+
+import java.net.DatagramSocket;
+
+public class UdpHello {
+
+	public static void main(String[] args) {
+		DatagramSocket socket = new DatagramSocket();
+
+	}
+
+}

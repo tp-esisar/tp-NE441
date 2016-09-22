@@ -1,0 +1,11 @@
+package exo4;
+
+public class UdpSend {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

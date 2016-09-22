@@ -1,0 +1,17 @@
+package exo4;
+
+import java.net.DatagramSocket;
+import java.net.InetSocketAddress;
+import java.net.SocketException;
+
+public class UdpSend {
+
+	public static void main(String[] args) throws SocketException {
+		// TODO Auto-generated method stub
+		DatagramSocket socket = new DatagramSocket(null);
+		socket.bind(new InetSocketAddress("127.0.0.1", 3000));
+		
+
+	}
+
+}
