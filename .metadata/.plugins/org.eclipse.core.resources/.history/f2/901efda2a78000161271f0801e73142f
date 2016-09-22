@@ -1,0 +1,50 @@
+package exo1;
+
+import java.awt.Color;
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetSocketAddress;
+
+import javax.swing.JFrame;
+
+public class ColorFrame {
+	private static JFrame frame;
+	public static void main(String[] args) throws IOException, InterruptedException {
+		ColorFrame app = new ColorFrame();
+		app.execute(args);
+	}
+	void execute(String[] args) {
+		DatagramSocket socket = new DatagramSocket();
+		InetSocketAddress adrDest = new InetSocketAddress("127.0.0.1", Integer.parseInt(args[0]));
+		boolean active = Boolean.parseBoolean(args[1]);
+		byte[] ativeMessage = new String("activation").getBytes();
+		DatagramPacket activePkt = new DatagramPacket(ativeMessage, ativeMessage.length, adrDest);
+		byte[] bufR = new byte[2048];
+		DatagramPacket rPkt = new DatagramPacket(bufR, bufR.length);
+		
+		frame = new JFrame("Chenillard");
+		frame.setSize(300, 300);
+		setScreen(active);
+		
+		
+		frame.getContentPane().setBackground(Color.GREEN);
+		frame.setVisible(true);
+		Thread.sleep(2000);
+		//
+		frame.getContentPane().setBackground(Color.RED);
+		frame.setVisible(true);
+		Thread.sleep(2000);
+		frame.getContentPane().setBackground(Color.GREEN);
+		frame.setVisible(true);
+		Thread.sleep(2000);
+		frame.dispose();
+	}
+	
+	void setScreen(boolean mode) {
+		Color c = mode ? Color.GREEN : Color.RED;
+		frame.getContentPane().setBackground(c);
+		frame.setVisible(true);
+	}
+		
+}

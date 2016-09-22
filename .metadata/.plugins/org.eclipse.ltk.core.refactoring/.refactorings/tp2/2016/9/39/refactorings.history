@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;exo1.Prog.java&apos; to &apos;ColorFrame.java&apos;&#x0A;- Original project: &apos;tp2&apos;&#x0A;- Original element: &apos;exo1.Prog.java&apos;&#x0A;- Renamed element: &apos;exo1.ColorFrame.java&apos;" description="Rename compilation unit &apos;Prog.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;exo1{Prog.java" name="ColorFrame.java" references="false" stamp="1474535494946" version="1.0"/>
+</session>
